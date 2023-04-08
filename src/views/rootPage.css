@@ -3,6 +3,7 @@
 	--lightBgColor: #ffffff;
 	--darkTextColor: #ffffff;
 	--darkBgColor: #000000;
+	--redBgColor: #110000;
 }
 
 .rp001Container {
@@ -12,10 +13,17 @@
 	transition-property: background, color;
 	transition-duration: 500ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	overflow: hidden;
 }
 
-.dark .rp001Container {
+/* .dark .rp001Container {
 	color: var(--darkTextColor);
 	background: var(--darkBgColor);
+	min-height: 100vh;
+} */
+
+.red .rp001Container {
+	color: var(--darkTextColor);
+	background: var(--redBgColor);
 	min-height: 100vh;
 }

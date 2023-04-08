@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 import Image from "../Image";
-import { LikeButton } from "../LikeButton";
 
 import { downloadPhoto } from "../../utils";
 import { RandomPhoto } from "../../utils/types/random";
@@ -13,11 +12,11 @@ import { ROUTES } from "../../router/webRoutes";
 function PhotoPreview({ photo }: { photo: RandomPhoto | UserPhoto | ResultPhoto | undefined }) {
 	return (
 		<>
-			<div className="shadow-2xl rounded-lg relative">
+			<div className="shadow-2xl relative">
 				<Image
 					className="block h-full select-none"
 					imageCustomStyles={{
-						borderRadius: "8px",
+						// borderRadius: "8px",
 						maxHeight: "90vh",
 						width: "100%",
 					}}
@@ -27,7 +26,7 @@ function PhotoPreview({ photo }: { photo: RandomPhoto | UserPhoto | ResultPhoto 
 				/>
 			</div>
 
-			<div className="absolute bottom-0 flex sm:flex-row flex-col sm:m-2 m-1 sm:gap-2 gap-1">
+			{/* <div className="absolute bottom-0 flex sm:flex-row flex-col sm:m-2 m-1 sm:gap-2 gap-1">
 				{photo && <LikeButton photo={photo} />}
 
 				<div
@@ -66,7 +65,7 @@ function PhotoPreview({ photo }: { photo: RandomPhoto | UserPhoto | ResultPhoto 
 						Download
 					</p>
 				</div>
-			</div>
+			</div> */}
 		</>
 	);
 }

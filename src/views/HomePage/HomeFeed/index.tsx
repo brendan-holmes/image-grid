@@ -83,7 +83,7 @@ export const HomeFeed = ({ topicId }: { topicId?: string }) => {
 						)}
 					></div>
 				</div>
-				<div
+				{/* <div
 					className={classNames(
 						showNewPhotosBtn ? "md:top-24 top-28" : "-top-10",
 						"fixed mx-auto left-1/2 -translate-x-1/2 z-20 transition-all"
@@ -103,8 +103,8 @@ export const HomeFeed = ({ topicId }: { topicId?: string }) => {
 							setShowNewPhotosBtn(false);
 						}}
 					/>
-				</div>
-				<div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 px-4 lg:grid-cols-4 gap-5 xl:w-10/12 w-full max-w-[1400px] mx-auto pt-5">
+				</div> */}
+				<div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 px-4 gap-5 xl:w-10/12 w-full max-w-[1400px] mx-auto pt-5 no-scrollbar">
 					{data?.map((item) =>
 						item.result.map((randomPhoto, index) => (
 							<Fragment key={randomPhoto.id}>

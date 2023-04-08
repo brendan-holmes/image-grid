@@ -22,14 +22,14 @@ export const ImageWithLabel = (props: ImageWithLabelType) => {
 				onClick={onClick}
 				className="block h-full select-none"
 				src={photo.urls.regular}
-				blurHash={photo.blur_hash}
+				// blurHash={photo.blur_hash}
 				loading="lazy"
 				alt={photo.description}
 				objectFit={"cover"}
 				urls={photo.urls}
 			/>
 
-			<Link to={ROUTES.USER.pathName + `${photo.user.username}`}>
+			{/* <Link to={ROUTES.USER.pathName + `${photo.user.username}`}>
 				<div
 					style={{
 						background: `${photo.color}aa`,
@@ -51,7 +51,7 @@ export const ImageWithLabel = (props: ImageWithLabelType) => {
 						{photo.user.name}
 					</p>
 				</div>
-			</Link>
+			</Link> */}
 		</div>
 	);
 };

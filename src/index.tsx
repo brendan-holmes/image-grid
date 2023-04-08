@@ -8,11 +8,14 @@ import React from "react";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
-	// <React.StrictMode>
-	<Provider store={store}>
-		<RouterRoutes />
-	</Provider>
-	// </React.StrictMode>
+	<div>
+		<React.StrictMode>
+			<Provider store={store}>
+				<RouterRoutes />
+			</Provider>
+		</React.StrictMode>
+	</div>
+	
 );
 
 // If you want your app to work offline and load faster, you can change

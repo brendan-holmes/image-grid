@@ -69,7 +69,9 @@ const Image = (props: ImageProps) => {
 				sizes="100vw"
 				srcSet={srcSet.join(", ")}
 				className={classNames(
-					showBlurhash ? "opacity-0" : "opacity-100 overflow-hidden",
+					showBlurhash ? "opacity-0" : 
+					
+					"opacity-100 overflow-hidden",
 					"transition-opacity duration-300 h-full w-full"
 				)}
 				alt={alt}
