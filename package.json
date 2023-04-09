@@ -1,5 +1,5 @@
 {
-	"name": "@brendan-holmes/react-image-grid",
+	"name": "@brendan-holmes/image-grid",
 	"version": "1.0.0",
 	"description": "React component for getting images and displaying them in a grid",
 	"dependencies": {
