@@ -1,11 +1,11 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface IApiResponse {
-	status: "fetching" | "success" | "error";
-	data?: null | unknown;
-	error?: null | unknown;
-	expiresIn?: null | Date;
-}
+// interface IApiResponse {
+// 	status: "fetching" | "success" | "error";
+// 	data?: null | unknown;
+// 	error?: null | unknown;
+// 	expiresIn?: null | Date;
+// }
 
 type PayloadType = {
 	key: string;
@@ -15,7 +15,8 @@ type PayloadType = {
 	timeout?: number;
 };
 
-const initialState: Record<string, IApiResponse> = {};
+// const initialState: Record<string, IApiResponse> = {};
+const initialState: Record<string, any> = {};
 
 export const QuerySlice = createSlice({
 	name: "query",

@@ -1,10 +1,12 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface ThemeState {
-	mode?: "dark" | "light";
-}
+// interface ThemeState {
+// 	mode?: "dark" | "light";
+// }
 const modeFromLocalStorage = localStorage.getItem("darkMode-key");
-const initialState :ThemeState= {
+// const initialState :ThemeState= {
+const initialState :any= {
+
 	mode: (modeFromLocalStorage === "dark" || modeFromLocalStorage === "light")
 		? modeFromLocalStorage
 		: (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"),
