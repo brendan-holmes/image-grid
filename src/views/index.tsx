@@ -3,7 +3,7 @@ import "./rootPage.css";
 
 const RootPage = () => {
 	return (
-		<div className={"rp001Container no-scroll	bar"}>
+		<div className={"rp001Container no-scrollbar"}>
 			<Outlet />
 		</div>
 	);

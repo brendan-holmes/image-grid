@@ -5,7 +5,6 @@ import { ImageWithLabel } from "../../../common/ImageWithLabel";
 import Modal from "../../../common/Modal";
 import CustomError from "../../../common/CustomError";
 import PhotoPreview from "../../../common/PhotoPreview";
-import PrimaryButton from "../../../common/PrimaryButton";
 import { HomeLoading } from "../../../common/LoadingSkeleton";
 
 import { RandomPhoto } from "../../../utils/types/random";
